@@ -1,0 +1,83 @@
+.hero {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width:750px) {
+        padding: 0;
+        margin: auto;
+        height: 70vh;
+    }
+
+    @media screen and (max-width:500px) {
+        padding: 0;
+        margin: auto;
+        height: 45vh;
+    }
+
+
+
+
+
+
+   
+
+
+    &_img {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 40%;
+        height:120%;
+        z-index: -1;
+        background-image: url(/img/hero-home-pk.jpg);
+        background-size: cover;
+        background-position: 0%;
+
+
+        @media screen and (max-width: 900px) {
+            width: 40%;
+            height: 110%;
+            
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 40%;
+            height: 80%;
+            
+            
+        }
+       
+    }
+
+
+    .heading_box {
+
+        max-width: 60rem;
+
+        @media screen and (max-width:750px) {
+            align-self: center;
+            
+        }
+    }
+
+    .heading_text {
+        font-weight: 300;
+        font-size: 4rem;
+
+        @media screen and (max-width: 500px) {
+            text-align: center;
+        }
+    }
+
+  
+
+
+}
+
+
+

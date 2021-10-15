@@ -1,0 +1,36 @@
+.list, .indent {
+
+
+    &_item {
+        list-style: none;
+        padding: 0.4rem;
+
+
+        &::before {
+            content: '';
+            background-color: $color-primary;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+            margin-right: 1rem;
+
+            -webkit-mask-image: url(/sprite/checkmark.svg);
+            -webkit-mask-size: contain;
+        }
+
+
+        
+
+        
+    }
+}
+
+
+.indent {
+
+    margin-left: 2rem;
+
+    .list_item--indent {
+        list-style: none;
+    }
+}

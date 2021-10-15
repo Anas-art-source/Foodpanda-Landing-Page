@@ -1,0 +1,108 @@
+.heading_container {
+    width: 100%;
+    display: block;
+    background-color: red;
+    padding-left: 10%;
+    position: relative;
+
+    
+}
+
+.heading_primary {
+    font-size: 15em;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: rgba($color-grey, 0.3);
+    position: absolute;
+    top: -5px;
+    left: 10rem;
+    z-index: 1;
+
+    
+    @media screen and (max-width:750px) {
+        display: none;
+      }
+
+    &_span {
+        font-size: 2.5em;
+        color: black;
+        font-weight: 100;
+
+        display: inline;
+        position: absolute;
+        top: 9.5rem;
+        left: 10rem;
+        z-index: 2;
+
+
+        
+        @media screen and (max-width:750px) {
+            display: none;
+          }
+    }
+}
+
+.para_heading {
+    color: black;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+
+    &--white {
+        color: white;
+    }
+}
+
+.paragraph {
+    color: $color-grey-light;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+
+    &--white {
+        color: white;
+    }
+
+    &--black {
+        color: black;
+    }
+}
+
+
+.letter_style {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+
+
+    font-size: 16rem;
+    font-weight: bolder;
+    color: $color-primary;
+    
+    position: absolute;
+    line-height: 1;
+    bottom: -7%;
+    left: -7%;
+    z-index: 0;
+    
+}
+
+.heading_main {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 1.3rem 0rem;
+}
+
+.heading_second {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0.5rem 0rem;
+}
+
+.heading_third {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0.5rem 0rem;
+}
+
+

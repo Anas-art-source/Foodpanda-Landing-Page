@@ -1,0 +1,115 @@
+.hero_form {
+        max-width: 80rem;
+        background-color: white;
+        margin-top: 6rem;
+        box-shadow: 0 2px 28px 0 rgba(0, 0, 0 , .12);
+        padding: 2rem;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      
+      
+
+        @media screen and (max-width:750px) {
+            width: 90%;
+            margin: 6rem auto 0rem auto;
+            
+            flex-direction: column;
+            background-color: transparent;
+            box-shadow: none;
+            
+            
+        }
+        
+        
+
+        .search {
+
+            display: flex;
+            align-items: center;
+           
+            flex-basis: 60%;
+            position: relative;
+            @media screen and (max-width:750px) {
+                width: 100%;
+                margin: 1rem;
+            }
+
+
+            &_form {
+                flex-grow: 1;
+                
+                padding: 1.5rem;
+                border: 1px solid $color-grey;
+                margin-right: -4rem;
+
+                
+            }
+
+            .mapBox {
+                width: 3rem;
+                height: 3rem;
+                background-color: $color-primary;
+                -webkit-mask-image: url(/sprite/location.svg);
+                -webkit-mask-size: contain;                
+            }
+
+           
+
+            &_span {
+                position: absolute;
+                top: 0;
+                display: inline-block;
+                background-color: white;
+                left: 1.4rem;
+                opacity: 0;
+                transition: all 0.2s;
+                
+            }
+
+            &_form::-webkit-input-placeholder {
+                transition: all 0.2s;
+            }
+
+
+            
+
+        }
+
+
+    .buttonBox {
+        flex-basis: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        @media screen and (max-width:750px) {
+            width: 90%;
+            margin: 1rem;
+        }
+        
+    } 
+
+
+    
+
+
+        
+}
+
+
+.search_form:focus::-webkit-input-placeholder {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+.search_form:focus + .search_span {
+    top: -0.65rem;
+    opacity: 1;
+}
+
+
+

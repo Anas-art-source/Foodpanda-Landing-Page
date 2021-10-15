@@ -1,0 +1,345 @@
+@import "base/base";
+@import "abstract/variable";
+
+@import "component/navigation";
+@import "component/hero";
+@import "component/search";
+@import "component/button";
+@import "component/cityCard";
+@import "component/list";
+
+
+@import "base/typography";
+
+
+
+ 
+
+.section_2 {
+    width: 100%;
+    height: 90vh;
+}
+
+.detail_container {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    top: 135px;
+    background-image: url(/img/home-vendor-pk.webp);
+    background-size: cover;
+    // background-clip: border-box;
+    background-position: center;
+    z-index: 3;
+
+
+    &--office {
+        background-image: url(/img/home-corporate-pk.webp);
+
+        
+        }
+    }
+
+
+.detail_card {
+    width: 55rem;
+    padding: 2.5rem;
+    background-color: white;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0 , .12);
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+
+    @media screen and (max-width: 900px) {
+        width: 90%;
+         left: 50%;
+        transform: translateX(-50%);
+        bottom: -15%;
+         
+    
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 90%;
+         left: 50%;
+        transform: translateX(-50%);
+        bottom: -5%;
+         
+    
+    }
+
+
+
+   
+}
+
+
+.section_3 {
+        width: 100%;
+        height: 100%;
+}
+
+
+.section_4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+   
+
+    
+    @media screen and (max-width:900px) {
+        height:60vh;
+    }
+
+
+    @media screen and (max-width:500px) {
+        height:60vh;
+    }
+
+
+}
+
+
+.app_detail {
+    background-color: $color-primary;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    top: 14rem;
+
+
+    @media screen and (max-width:900px) {
+        height:50vh;
+    }
+
+
+
+    
+   
+      
+      @media screen and (max-width:500px) {
+        height: 50vh;
+      }
+
+
+    &_mainBox {
+        display: flex;
+
+        @media screen and (max-width:750px) {
+            flex-direction: column-reverse;
+
+            
+
+          }
+
+        .app_photo {
+            position: absolute;
+            right: 0;
+            top: -6rem;
+            width: 50%;
+
+            @media screen and (max-width:750px) {
+                top: -50%;
+                right: 50%;
+                transform: translate(50%, 0%);
+                width: 60%;
+              }
+
+
+              
+            @media screen and (max-width:500px) {
+                top: -50%;
+                right: 50%;
+                transform: translate(50%, 0%);
+                width: 60%;
+              }
+              
+
+        }
+    }
+    
+
+    &_textBox {
+        width: 40%;
+        margin: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        
+        @media screen and (max-width:750px) {
+            margin: auto;
+            margin-top: 10vh;
+          }
+
+        h4,p {
+            flex-basis: 100%;
+        }
+
+        & > * {
+            margin: 2rem;
+
+            
+           
+            
+          
+        }
+
+        
+        @media screen and (max-width:750px) {
+            
+            width: 80%;
+            padding: 2rem;
+          }
+
+        
+    }
+
+    .app{
+        background-color: white;
+        width: 13rem;
+        height: 7rem;
+        margin-top: 6rem;
+    
+        
+        
+        
+
+        &_apple {
+            -webkit-mask-image: url(/sprite/appStore.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            
+            
+
+        }
+
+        &_google {
+            -webkit-mask-image: url(/sprite/googlePlay.svg);
+            -webkit-mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+
+        }
+    }
+}
+
+
+.section_6 {
+    margin: 3rem 10rem 0rem 10rem;
+    border-bottom: 1px solid rgba($color-grey-light,0.3);
+
+    @media screen and (max-width:750px) {
+        margin-top: 10rem;
+        
+    }
+
+    @media screen and (max-width:500px) {
+        margin-top: 16rem;
+        
+    }
+}
+
+.section_7 {
+    margin: 1rem 10rem;
+    height: 100%;
+    border-bottom: 1px solid rgba($color-grey-light,0.3);
+    padding-bottom: 2rem;
+}
+
+
+.readMore_data {
+
+
+    height: 0vh;
+    overflow: hidden;
+    transition: height 0.2s;
+   
+
+    &_1 {
+        border-bottom: 1px solid rgba($color-grey-light,0.3);
+    }
+
+
+    &--animate {
+        height: 100vh;
+        overflow: hidden;
+        
+
+        
+    }
+}
+
+
+.socialMedia {
+    margin: 0rem 10rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+
+
+    .foodPandaImg {
+        background-color: rgba($color-grey-light,0.3);
+        width: 20rem;
+        height: 5rem;
+        -webkit-mask-image: url(/sprite/foodpanda.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+    }
+    
+    .icon {
+        margin: 0 0.5rem;
+    }
+    .icon:hover {
+        background-color: $color-primary;
+        
+
+    }
+
+    .facebook {
+        background-color: rgba($color-grey-light,0.3);
+        width: 2rem;
+        height: 2rem;
+        -webkit-mask-image: url(/sprite/facebook.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        margin-left: auto;
+    }
+
+    .instagram {
+        background-color: rgba($color-grey-light,0.3);
+        width: 2rem;
+        height: 2rem;
+        -webkit-mask-image: url(/sprite/instagram.svg);
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+    }
+}
+
+
+
+
+@media screen and (max-width:750px) {
+    [class^='section'] {
+        height: 75vh;
+    }
+
+    [class*='section_6'],[class*='section_7'] {
+        height: 100%;
+    }
+
+    
+  }
+
+
+  @media screen and (max-width:750px) {
+    [class^='section'] {
+        height: 70vh;
+       
+    }
+
+    [class*='section_6'],[class*='section_7'] {
+        height: 100%;
+    }
+
+    
+  }
+
+
